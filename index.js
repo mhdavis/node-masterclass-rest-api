@@ -16,6 +16,9 @@ var server = http.createServer(function(req, res) {
     var path = parsedUrl.pathname;
     var trimmedPath = path.replace(/^\/+|\/+s/g, ''); // removes extrenous slashes
 
+    // Get the query string as an object
+    var queryStringObject = parsedUrl.query;
+
     // Get the HTTP method
     var method = req.method.toLowerCase();
 
