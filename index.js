@@ -61,7 +61,8 @@ var server = http.createServer(function(req, res) {
             var payloadString = JSON.stringify(payload);
 
             // Return the response
-            res.writeHead(statusCode)
+            res.setHeader('Content-Type', 'application/json');
+            res.writeHead(statusCode);
             res.end(payloadString);
 
             // Log the request path
