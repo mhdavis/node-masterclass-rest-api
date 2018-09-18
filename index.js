@@ -108,5 +108,6 @@ var router = {
     'ping': handlers.ping,
     'users': handlers.users,
     'notFound': handlers.notFound,
-    'tokens': handlers.tokens
+    'tokens': handlers.tokens,
+    'checks': handlers.checks
 };
